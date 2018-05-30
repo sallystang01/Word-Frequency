@@ -1,0 +1,10 @@
+C:\Data\Word-Frequency\WordFruequency\WordFruequency\bin\Debug\WordFruequency.exe.config
+C:\Data\Word-Frequency\WordFruequency\WordFruequency\bin\Debug\WordFruequency.exe
+C:\Data\Word-Frequency\WordFruequency\WordFruequency\bin\Debug\WordFruequency.pdb
+C:\Data\Word-Frequency\WordFruequency\WordFruequency\obj\Debug\WordFruequency.csprojResolveAssemblyReference.cache
+C:\Data\Word-Frequency\WordFruequency\WordFruequency\obj\Debug\WordFruequency.Home.resources
+C:\Data\Word-Frequency\WordFruequency\WordFruequency\obj\Debug\WordFruequency.Properties.Resources.resources
+C:\Data\Word-Frequency\WordFruequency\WordFruequency\obj\Debug\WordFruequency.csproj.GenerateResource.cache
+C:\Data\Word-Frequency\WordFruequency\WordFruequency\obj\Debug\WordFruequency.csproj.CoreCompileInputs.cache
+C:\Data\Word-Frequency\WordFruequency\WordFruequency\obj\Debug\WordFruequency.exe
+C:\Data\Word-Frequency\WordFruequency\WordFruequency\obj\Debug\WordFruequency.pdb
