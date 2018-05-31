@@ -51,21 +51,52 @@ namespace WordFruequency
                 line.Trim();
                 fields = line.Split(delim.ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
                 counter += fields.Length; //and just add how many of them there is
-               
-
+                
             }
+
+            string abc = line;
+            int Count = 0;
+            Dictionary<string, int> dictionary = new Dictionary<string, int>();
+            
+            
+            foreach (char c in abc)
+            {
+                if (c == 'F')
+                {
+                    Count++;
+                }
+            }
+            int k = Count;
 
             DataTable dt = new DataTable();
             
             dt.Columns.Add(new DataColumn("Number of Words", typeof(string)));
 
             dt.Columns.Add(new DataColumn("Number of Characters", typeof(string)));
+            dt.Columns.Add(new DataColumn("Word", typeof(string)));
+            dt.Columns.Add(new DataColumn("Amount", typeof(string)));
+
+            DataRow dr = dt.NewRow();
+            dr[0] = counter.ToString();
+            dr[1] = k.ToString();
             
+            dt.Rows.Add(dr);
+            //dt.Rows.Add(counter.ToString());
+            foreach (string word in fields)
+            {
+                if (dictionary.ContainsKey(word))
+                {
+                    dictionary[word] += 1;
+                }
+                else
+                {
+                    dictionary.Add(word, 1);
+                }
+                dr[2] = word.ToString();
+                dr[3] = dictionary.Count().ToString() ;
+            }
 
-            dt.Rows.Add(counter.ToString());
-           
-
-           dgWords.DataSource = dt;
+            dgWords.DataSource = dt;
 
             sr.Close();
 
